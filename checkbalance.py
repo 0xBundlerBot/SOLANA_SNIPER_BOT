@@ -1,5 +1,5 @@
 from solana.rpc.api import Client 
-from solders.pubkey import Pubkey 
+from solders.pubkey import Pubkey  
       
 def check_sol_balance(public_key_str: str) -> float:          
     solana_client = Client("https://api.mainnet-beta.solana.com")         
