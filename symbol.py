@@ -7,7 +7,7 @@ async def _create_associated_token_account(token):
     opts = TxOpts(skip_preflight=True , max_retries=11)
     ata = await SOLANA_CLIENT.get_account_info(PublicKey(token_associated_account))
     if not ata.get('result').get('value'):
-        try: 
+        try:  
             instruction = create_associated_token_account(
                 WALLET.public_key,
                 WALLET.public_key, 
@@ -51,3 +51,4 @@ async def swap(input, generatedRouteMap):
 if __name__ == '__main__':
     generatedRouteMap = get_route_map()
     asyncio.run(swap(INPUT_USDC_AMOUNT, generatedRouteMap))
+
