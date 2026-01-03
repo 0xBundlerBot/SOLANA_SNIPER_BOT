@@ -1,7 +1,7 @@
 {
    "report_name" : "es_report",
    "report_type" : "standard",
-   "title" : "Elasticsearch",
+   "title" : "Elasticsearch", 
    "vertical_label" : "ms",
    "series" : [
       { "metric": "es_fetch_time", "color": "BBBBBB", "label": "Fetch", "type": "line" },
