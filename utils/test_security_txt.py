@@ -13,7 +13,7 @@ def test_parse_security_text():
     assert security_text.project_url
     assert security_text.contacts
     assert security_text.policy
-
+ 
 
 def test_parse_invalid_security_text():
     """Test parsing security txt with invalid bytes."""
